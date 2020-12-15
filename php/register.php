@@ -11,7 +11,7 @@ include('database.php');
 
 $db = getDB();
 if($db) {
-    $query = 'CREATE TABLE IF NOT EXISTS account (username VARCHAR(50) PRIMARY KEY,
+    $query = 'CREATE TABLE IF NOT EXISTS vl (username VARCHAR(50) PRIMARY KEY,
                                                   password TEXT NOT NULL,
                                                   fullname VARCHAR(50) NOT NULL,
                                                   phone VARCHAR(11),
@@ -20,7 +20,7 @@ if($db) {
     pg_query($query);
 
     if( isset($username) && isset($password) && isset($fullname) ) {
-        $query = "INSERT INTO account VALUES ('$username', '$password', '$fullname',
+        $query = "INSERT INTO vl VALUES ('$username', '$password', '$fullname',
                                               '$phone', '$birthday', $age)";
         $success = pg_query($query);
     }
