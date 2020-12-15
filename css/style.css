@@ -1,0 +1,106 @@
+/* Lego*/
+.Front {
+    height: 120px;
+}
+
+    .Front img {
+        width: 12%;
+        height: auto;
+       margin-left: 620px;
+    }
+    .Front form{
+    float: right;
+    margin-top: 10px;
+    }
+/* FOOTER */
+
+.footer {
+    height: 150px;
+    margin-top: 500px;
+    background-color: #006600;
+    overflow: hidden;
+    width: 100vw;
+    box-sizing: border-box;
+    color: white;
+}
+
+.link li {
+    display: inline-block;
+    padding: 7px;
+    font-size: larger;
+}
+
+.linkstore {
+    margin-left: 200px;
+}
+
+.linkabout {
+    margin-left: 280px;
+}
+
+.linkcontact {
+    margin-left: 350px;
+}
+
+.out_contact {
+    margin: -15px 640px 100px 690px;
+    width:100%;
+}
+
+    .out_contact i {
+        font-size: xx-large;
+        padding: 10px;
+        padding-right:20px;
+
+    }
+
+.link a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Menubar */
+.container{
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+    float: left;
+
+}
+    .container a{
+        color:grey;
+        text-decoration: none;
+        padding: 7px;
+        font-size: x-large;
+        cursor: pointer;
+        text-align: center;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+        .container a:hover {
+            color: black;
+        }
+    .menu_home{
+        margin-left: 150px;
+    }
+    .menu_product{
+        margin-left: 160px;
+    }
+    .menu_about{
+        margin-left: 160px;
+    }
+    .menu_contact{
+        margin-left: 160px;
+    }
+
+    /* Navbar*/
+.navbar{
+    border: solid;
+    margin-top: 15px;
+    float: left;
+}
+    .nav-link{
+        border: solid;
+    }

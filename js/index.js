@@ -1,16 +1,16 @@
-$(".menu_item").ready(Ready);
+$(".nav-item").ready(Ready);
 $(document).on("DOMContentLoaded", DOMLoaded);
 $(document).on("submit", "#frm-login", Login);
 $(document).on("submit", "#frm-register", Register);
 
 function DOMLoaded() {
-    $("#menubar").load("../html/menu.html");
+    $("#navbar").load("../html/menu.html");
 }
 
 function Ready() {
     var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
 
-    $(".menu_item a").each(function () {
+    $(".nav-item a").each(function () {
         if ($(this).attr("href") == pgurl || $(this).attr("href") == '') {
             $(this).addClass("active");
         }
