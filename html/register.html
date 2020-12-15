@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Form</title>
+    </head>
+
+    <body>
+        <form id="frm-register">
+            <div id="error"></div>
+            
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="email" name="username" id="email" required></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" id="password" minlength="6" maxlength="20"></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="password" id="confirm-password" minlength="6" maxlength="20"></td>
+                </tr>
+
+                <tr>
+                    <td>Fullname</td>
+                    <td><input type="text" name="fullname" id="fullname"></td>
+                </tr>
+
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="tel" name="phone" id="phone"></td>
+                </tr>
+
+                <tr>
+                    <td>Birthday</td>
+                    <td><input type="date" name="birthday" id="birthday"></td>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="age" id="age"></td>
+                </tr>
+            </table>
+            
+            <input type="submit" id="btn-register" value="Register">
+            <input type="reset" value="Clear">
+        </form>
+
+        <a href="login.html" rel="external">Back to login</a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
