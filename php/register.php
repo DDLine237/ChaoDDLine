@@ -19,6 +19,15 @@ if($db) {
                                                   age INTEGER)';
     pg_query($query);
 
+    if( !isset($birthday)){
+        $birthday="";
+    }
+    if( !isset($phone)){
+        $phone="";
+    }
+    if( !isset($age)){
+        $age="";
+    }
     if( isset($username) && isset($password) && isset($fullname) ) {
         $query = "INSERT INTO account VALUES ('$username', '$password', '$fullname',
                                               '$phone', '$birthday', $age)";

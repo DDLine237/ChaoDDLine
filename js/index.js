@@ -56,3 +56,28 @@ function Register(e)
         $("#error").text("* Password mismatched.\n");
     }
 }
+
+/*$("#product-all").ready(showAllProduct);
+
+function showAllProduct(){
+    $.ajax ({
+            type: "POST",
+            url: "../php/product_all.php",
+            success: function( result ) {
+                result = $.parseJSON(result);
+                displayProduct(result);
+                }
+            };)
+}
+
+function displayProduct(products){
+$("#product-list").empty();
+
+    var product=[{
+
+    }];
+for(item of products){
+    var text='<div class="col-sm">
+              <div class="card" style="width:18rem;"
+                <img src="$(product[i].img}" class'
+}*/
