@@ -95,7 +95,7 @@ function showProduct(){
                                 <p class="card-text"></p>
                             </div>
                              <div class="card-footer">
-                                <small>${item.price}</small>
+                                <medium>${item.price}</medium>
                             </div>
                         </div>
                     </div>`;
