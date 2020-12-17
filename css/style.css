@@ -1,16 +1,54 @@
 /* Lego*/
 .Front {
     height: 130px;
+    background-color: #AE1417;
 }
 
     .Front img {
         width: 12%;
         height: auto;
-       margin-left: 620px;
+       margin-left: 10px;
     }
     .Front form{
     float: right;
     margin-top: 10px;
+    }
+    /* Menubar */
+.container{
+    margin-top: 10px;
+    height: auto;
+    width: auto;
+    float:left;
+   border: solid;
+
+}
+    .container a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: x-large;
+        cursor: pointer;
+        text-align: center;
+        padding-left:20px;
+        padding-right:20px;
+        color: black;
+    }
+
+        .container a:hover {
+            color: white;
+            background-color: black
+        }
+    .menu_home{
+        margin-left: 50px;
+        padding-right: 10px;
+    }
+    .menu_product{
+        margin-left: 40px;
+    }
+    .menu_about{
+        margin-left: 40px;
+    }
+    .menu_contact{
+        margin-left: 40px;
     }
 /* FOOTER */
 
@@ -60,46 +98,9 @@
     font-weight: 600;
 }
 
-/* Menubar */
-.container{
-    margin-top: 15px;
-    height: auto;
-    width: auto;
-    float:left;
-   border: solid;
 
-}
-    .container a{
-        text-decoration: none;
-        padding: 10px;
-        font-size: x-large;
-        cursor: pointer;
-        text-align: center;
-        padding-left:20px;
-        padding-right:20px;
-        color: black;
-    }
-
-        .container a:hover {
-            color: black;
-            background-color: whitesmoke;
-            text-decoration: underline;
-        }
-    .menu_home{
-        margin-left: 140px;
-        padding-right: 10px;
-    }
-    .menu_product{
-        margin-left: 160px;
-    }
-    .menu_about{
-        margin-left: 160px;
-    }
-    .menu_contact{
-        margin-left: 160px;
-    }
     /* Home background in Home*/
-    
+
     /* Intro background in productpage*/
     .intro_background{
         margin-top: 0px;
