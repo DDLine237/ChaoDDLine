@@ -1,5 +1,5 @@
 <?php
-if(!isset($_POST['id'])){
+if(isset($_POST['id'])){
     include('database.php');
     if(getDB()){
         $id=intval($_POST['id']);
