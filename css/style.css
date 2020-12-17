@@ -1,8 +1,6 @@
 /* Lego*/
 .Front {
     height: 130px;
-    border-bottom-style: groove;
-
 }
 
     .Front img {
@@ -64,16 +62,14 @@
 
 /* Menubar */
 .container{
-    margin-top: 20px;
+    margin-top: 15px;
     height: auto;
     width: auto;
-    float: left;
+    float:left;
    border: solid;
-   background-color: #e0eefe;
 
 }
     .container a{
-        color:blueviolet;
         text-decoration: none;
         padding: 10px;
         font-size: x-large;
@@ -81,29 +77,26 @@
         text-align: center;
         padding-left:20px;
         padding-right:20px;
-        border: solid;
+        color: black;
     }
 
         .container a:hover {
             color: black;
             background-color: whitesmoke;
+            text-decoration: underline;
         }
     .menu_home{
-        margin-left: 120px;
+        margin-left: 140px;
         padding-right: 10px;
-        background-color: plum;
     }
     .menu_product{
         margin-left: 160px;
-        background-color: powderblue;
     }
     .menu_about{
         margin-left: 160px;
-        background-color: burlywood;
     }
     .menu_contact{
         margin-left: 160px;
-        background-color:peachpuff;
     }
 
     /* Intro background*/
@@ -118,7 +111,7 @@
         }
     .product_intro{
         float: left;
-        margin-left: 45px;
+        margin-left: 47px;
         margin-top: 46px;
     }
     .background-christ-1{
