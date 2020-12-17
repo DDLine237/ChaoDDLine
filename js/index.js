@@ -86,12 +86,16 @@ function showProduct(){
     
     for(item of products){   
         var text = `<div class="col-4 sm">
+        
                         <div class="card" id="heo">
+                        
                             <div class="img-manual setBorder">
-                                <img src="${item.img}" class="img-fluid" alt="Responsive image">
+                            <a data-product-id='${item.id}' href='product_detail.html' rel='external'
+                            id="view-details" style="text-decoration:none; color:black"><img src="${item.img}" 
+                            class="img-fluid" alt="Responsive image"></a>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">${item.name}</h5>
+                                <h5 class="card-title" id="product-id">${item.name}</h5>
                                 <p class="card-text"></p>
                             </div>
                              <div class="card-footer">
@@ -118,15 +122,35 @@ function showProduct_php(){
         }
     });
 
-
-/*<a data-product-id='${item.id}' 
-href*/
-
-
-/*$(document).on("click","#btn-view-details", Viewdetails);
-functions ViewDetails(product){
+/*$(document).on("click","#view-details", ViewDetails);
+function ViewDetails()
+{
     var id=$(this).data("product-id");
-    alert(id);
-}*/
+    alert(id);*/
+    
+   /* $.ajax ({
+            type: "POST",
+            url: "../php/product_detail.php",
+            data: {id: id},
+            success: function( result ) {
+                result = $.parseJSON(result);
+                
+                $("#showAllProduct").empty();
+                $("#product-details").empty();
 
-}
+                var text=
+                '<img src="${result[0].img}" alt="${result[0].name}">
+                <h5>${result[0].name} </h5>
+                <p>${result[0].price}</p>
+                <a href="#" class="btn btn-success">Add to cart</a>';
+                
+                $("#product-details").append(text);
+            }
+        });
+        location.href="product_detail.html";*/
+    }
+    
+
+
+
+
