@@ -2,6 +2,7 @@
 .Front {
     height: 130px;
     background-color: #AE1417;
+    float: left;
 }
 
     .Front img {
