@@ -108,7 +108,7 @@
 
     /* Intro background*/
     .intro_background{
-        margin-top: 7px;
+        margin-top: 0px;
         float: left;
     }
         .intro_background img{
@@ -118,7 +118,7 @@
         }
     .product_intro{
         float: left;
-        margin-left: 30px;
+        margin-left: 40px;
         margin-top: 46px;
     }
     .background-christ-1{
