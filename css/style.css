@@ -118,7 +118,7 @@
         }
     .product_intro{
         float: left;
-        margin-left: 55px;
+        margin-left: 0px;
         margin-top: 50px;
     }
     .background-christ-1{
@@ -126,7 +126,7 @@
     }
     .background-christ-2{
         float: right;
-        margin-left: 70px;
+        margin-left: 0px;
     }
 
     /* Navbar in Product page*/
