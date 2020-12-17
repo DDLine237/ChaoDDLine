@@ -138,7 +138,7 @@ function ViewDetails() {
                      if(status === 'success') {
                         $('#product-details #product_name').text(result[0].name);   
                         $('#product-details #product_price').text(result[0].price);
-                        $('#product-detail #img_01').attr('href', result[0].img); 
+                        $('#product-details #img_01').attr('src', result[0].img); 
                      }
                  });
                  /*var text=
