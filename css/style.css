@@ -21,7 +21,7 @@
     width: auto;
     float:left;
    border: solid;
-
+    color: white;
 }
     .container a{
         text-decoration: none;
@@ -31,12 +31,10 @@
         text-align: center;
         padding-left:20px;
         padding-right:20px;
-        color: black;
     }
 
         .container a:hover {
-            color: white;
-            background-color: black
+            color:cornflowerblue;
         }
     .menu_home{
         margin-left: 50px;
