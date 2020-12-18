@@ -5,53 +5,71 @@
     </head>
 
     <body>
-        <form id="frm-register">
+        <div class="text_block" style="background-image:url('../Background/login_back.jpg')">
+        <form id="frm-register" class="register_form">
+            <fieldset>
+                <legend>Register Form</legend> 
             <div id="error"></div>
             
             <table>
                 <tr>
                     <td>Username</td>
-                    <td><input type="email" name="username" id="email" required></td>
+                    <td><input  class="form_text"type="email" name="username" id="email" placeholder="enter your username..."required></td>
                 </tr>
 
                 <tr>
                     <td>Password</td>
-                    <td><input type="password" name="password" id="password" minlength="6" maxlength="20"></td>
+                    <td><input  class="form_text"type="password" name="password" id="password" minlength="6" maxlength="20" placeholder="enter your Password..."></td>
                 </tr>
 
                 <tr>
                     <td>Confirm Password</td>
-                    <td><input type="password" name="password" id="confirm-password" minlength="6" maxlength="20"></td>
+                    <td><input type="password" name="password" id="confirm-password" minlength="6" maxlength="20" placeholder="re-password"></td>
                 </tr>
 
                 <tr>
                     <td>Fullname</td>
-                    <td><input type="text" name="fullname" id="fullname"></td>
+                    <td><input class="form_text" type="text" name="fullname" id="fullname" placeholder="enter your fullname..."></td>
                 </tr>
 
                 <tr>
                     <td>Phone</td>
-                    <td><input type="tel" name="phone" id="phone"></td>
+                    <td><input  class="form_text"type="tel" name="phone" id="phone" placeholder="your phone number..."></td>
                 </tr>
 
                 <tr>
                     <td>Birthday</td>
-                    <td><input type="date" name="birthday" id="birthday"></td>
+                    <td><input  class="form_text"type="date" name="birthday" id="birthday"></td>
                 </tr>
 
                 <tr>
                     <td>Age</td>
-                    <td><input type="number" name="age" id="age"></td>
+                    <td><input  class="form_text"type="number" name="age" id="age"></td>
                 </tr>
             </table>
-            
+            <div> <p> By creating an account you accept to our <a Terms & Privacy>Terms & Privacy</a></p></div>
+            <div>
             <input type="submit" id="btn-register" value="Register">
             <input type="reset" value="Clear">
+            </div>
+            </fieldset>
         </form>
+    </div>
 
         <a href="login.html" rel="external">Back to login</a>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="../js/index.js"></script>
+        <div class="footer">
+            <div class="link">
+                <ul>
+                    <li class="linkstore"><a href="Stores.html">Stores</a></li>
+                    <li class="linkcontact"><a href="ContactUs.html">Contact with us</a></li>
+                    <li class="linkabout"><a href="AboutUs.html">About</a></li>
+                </ul>
+            </div>
+            <div class="out_contact">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
     </body>
 </html>
