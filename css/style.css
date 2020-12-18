@@ -199,3 +199,43 @@ background-color: #125986;
     padding: 10px;
     margin-left: 55px;
 }
+
+/*Login form*/
+
+.login_form {
+    text-align: center;
+    margin-top: 50px;
+    padding: 16px;
+}
+
+    .login_form legend {
+        color: darkorange;
+        font-size: xx-large;
+    }
+
+fieldset {
+    padding: 10px;
+    margin-left: 490px;
+    margin-right: 470px;
+}
+
+.form {
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.form_text {
+    font-size: small;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.login_button {
+    font-size: large;
+    width: 100px;
+    background-color: darkorange;
+    color: white;
+    margin-top: 15px;
+}

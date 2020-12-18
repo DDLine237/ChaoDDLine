@@ -12,24 +12,27 @@
 
         <div id="navbar"></div>
         <form id="frm-login">
+            <fieldset>
+            <legend>Login</legend>
             <div id="error"></div>
             
             <table>
                 <tr>
                     <td>Username</td>
-                    <td><input type="email" name="username" id="email" required></td>
+                    <td><input class="form_text" type="email" name="username" id="email"  placeholde="Enter your username..." required></td>
                 </tr>
 
                 <tr>
                     <td>Password</td>
-                    <td><input type="password" name="password" id="password" minlength="6" maxlength="20"></td>
+                    <td><input class="form_text" type="password" name="password" id="password" minlength="6" maxlength="20"  placeholde="Enter your password..."></td>
                 </tr>
             </table>
             
-            <input type="submit" id="btn-login" value="Login">
+            <input type="submit" class="login_button"id="btn-login" value="Login">
+            </fieldset>
         </form>
 
-        <div>No account? Register <a href="register.html" rel="external">here</a>.</div>
+        <div>No account? Register <a href="register.html" rel="external"><Span style="font-weight: 300; font-size: medium;color: orange;">HERE</Span></a>.</div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="../js/index.js"></script>
