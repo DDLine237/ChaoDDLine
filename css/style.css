@@ -1,54 +1,4 @@
-/* Lego
-.Front {
-    height: 130px;
-    background-color: #AE1417;
-    float: left;
-}
-
-    .Front img {
-        width: 12%;
-        height: auto;
-       margin-left: 10px;
-    }
-    .Front form{
-    float: right;
-    margin-top: 10px;
-    }
-    /* Menubar
-.container{
-    margin-top: 10px;
-    height: auto;
-    width: auto;
-    float:left;
-   border: solid;
-    color: white;
-}
-    .container a{
-        text-decoration: none;
-        padding: 10px;
-        font-size: x-large;
-        cursor: pointer;
-        text-align: center;
-        padding-left:20px;
-        padding-right:20px;
-    }
-
-        .container a:hover {
-            color:cornflowerblue;
-        }
-    .menu_home{
-        margin-left: 50px;
-        padding-right: 10px;
-    }
-    .menu_product{
-        margin-left: 40px;
-    }
-    .menu_about{
-        margin-left: 40px;
-    }
-    .menu_contact{
-        margin-left: 40px;
-    }*/
+/*Front*/
 .Front{
     border: solid pink;
     height: 140px;
@@ -58,7 +8,8 @@
     margin-left: 5px;
     float: left;
 }
-.menu{
+.menu
+{
     width: 580px;
     float: left;
     margin-left: 190px;
