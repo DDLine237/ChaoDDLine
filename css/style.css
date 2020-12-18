@@ -229,6 +229,8 @@ fieldset {
     padding: 10px;
     text-align: center;
     margin-left: 50px;
+    border: solid;
+
 }
 
 .form_text {
