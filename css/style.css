@@ -206,6 +206,7 @@ background-color: #125986;
     text-align: center;
     margin-top: 50px;
     padding: 16px;
+    border: solid;
 }
 
     .login_form legend {
@@ -217,6 +218,8 @@ fieldset {
     padding: 10px;
     margin-left: 490px;
     margin-right: 470px;
+    border: solid green;
+
 }
 
 .form {
