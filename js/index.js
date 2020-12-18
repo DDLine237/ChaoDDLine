@@ -75,7 +75,7 @@ function showProduct() {
             { id: 1, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
             { id: 2, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
             { id: 3, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
-            { id: 3, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
+            { id: 5, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
             { id: 4, name: "helo", price: "$20", img: "../Pic/heo.jpg" }
         ];
 
