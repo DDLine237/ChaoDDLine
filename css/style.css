@@ -202,27 +202,23 @@ background-color: #125986;
 
 /*Login form*/
 .text_block{
-    border: yellowgreen solid;
     height: 580px;
 }
 .login_form {
     text-align: center;
     margin-top: 50px;
     padding: 16px;
-    border: solid red;
     height: 500px;
 
 }
 table{
     margin-top: 20px;
-    border: purple solid;
     margin-left: 60px;
 }
 
    legend {
         color: darkorange;
         font-size: xx-large;
-        border: solid plum;
     }
 
 fieldset {
@@ -231,7 +227,6 @@ fieldset {
     margin-left: 490px;
     margin-right: 470px;
     background-color: white;
-    border: solid green;
 }
 
 
@@ -240,7 +235,6 @@ fieldset {
     font-size: small;
     padding: 10px;
     margin-left: 15px;
-    border: solid seagreen;
 }
 
 .login_button {
