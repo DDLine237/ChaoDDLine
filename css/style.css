@@ -72,7 +72,7 @@
         text-align: center;
     }
     .menu a:hover{
-        text-decoration: underline;
+        text-decoration: underline whitesmoke;
     }
     .menu_home{
         padding-left: 20px;
