@@ -221,6 +221,7 @@ fieldset {
     margin-left: 490px;
     margin-right: 470px;
     border: solid green;
+    text-align: center;
 
 }
 
@@ -230,14 +231,13 @@ fieldset {
     text-align: center;
     margin-left: 50px;
     border: solid;
-    padding-left: 30px;
 
 }
 
 .form_text {
     font-size: small;
     padding: 10px;
-    margin-left: 5px;
+    margin-left: 30px;
 }
 
 .login_button {
