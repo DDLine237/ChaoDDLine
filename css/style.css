@@ -209,12 +209,16 @@ background-color: #125986;
     border: solid red;
 
 }
+table{
+    margin-top: 20px;
+    border: purple solid;
+    margin-left: 60px;
+}
 
    legend {
         color: darkorange;
         font-size: xx-large;
         border: solid plum;
-        margin-bottom: 30px;
     }
 
 fieldset {
@@ -222,22 +226,16 @@ fieldset {
     padding: 10px;
     margin-left: 490px;
     margin-right: 470px;
+    background-color: white;
     border: solid green;
 }
 
-.form {
-    font-size: large;
-    padding: 10px;
-    text-align: center;
-    margin-left: 50px;
-    border: solid lightseagreen;
 
-}
 
 .form_text {
     font-size: small;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 15px;
     border: solid seagreen;
 }
 
@@ -246,5 +244,5 @@ fieldset {
     width: 100px;
     background-color: darkorange;
     color: white;
-    margin-top: 15px;
+    margin-top: 20px;
 }

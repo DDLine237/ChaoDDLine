@@ -11,19 +11,21 @@
     <body>
 
         <div id="navbar"></div>
-        <form id="frm-login" class="login_form">
+        <div class="text_block"
+        style="background-image:url('../Background/login_back.jpg')">
+        <form id="frm-login" class="login_form"style="font-family:'Times New Roman', Times, serif; font-size: large;" >
             <fieldset>
                 <legend>Login</legend>
                 <div id="error"></div>
             
                 <table>
                 <tr>
-                    <td style="margin-left: 20px;">Username</td>
+                    <td class="form" style="font-family:'Times New Roman', Times, serif; font-size: large; font-weight: 500;">Username:</td>
                     <td><input class="form_text" type="email" name="username" id="email"  placeholder="Enter your username..." required></td>
                 </tr>
 
                 <tr>
-                    <td>Password</td>
+                    <td class="form" style="font-family:'Times New Roman', Times, serif; font-size: large; font-weight: 500;">Password:</td>
                     <td><input class="form_text" type="password" name="password" id="password" minlength="6" maxlength="20"  placeholder="Enter your password..."></td>
                 </tr>
             </table>
@@ -35,7 +37,7 @@
 
             </fieldset>
         </form>
-
+    </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="../js/index.js"></script>
