@@ -1,6 +1,6 @@
 /*Front*/
 .Front{
-background-color: #D20404;
+background-color: #125986;
     height: 140px;
 }
 .Front img{
@@ -52,7 +52,7 @@ background-color: #D20404;
 .footer {
     height: 150px;
     margin-top: 500px;
-    background-color: #006600;
+    background-color: #125986;
     overflow: hidden;
     width: 100vw;
     box-sizing: border-box;
