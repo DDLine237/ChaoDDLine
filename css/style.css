@@ -211,7 +211,7 @@ background-color: #125986;
     height: 500px;
 
 }
-table{
+.login_table{
     margin-top: 20px;
     margin-left: 60px;
 }
@@ -242,5 +242,15 @@ fieldset {
     width: 100px;
     background-color: darkorange;
     color: white;
+    margin-top: 20px;
+}
+
+/* Register form*/
+.register_form{
+    border: solid orange;
+    text-align: center;
+}
+.register_table{
+    border: solid pink;
     margin-top: 20px;
 }
