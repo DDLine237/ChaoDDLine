@@ -345,7 +345,7 @@ font-size: xx-large;}
     font-size: xx-large;
 }
 
-/*About us */
+/*About us*/
 .head_about {
   
     text-align: center;
@@ -368,3 +368,58 @@ font-size: xx-large;}
     margin-left: 300px;
     margin-right: 300px
 }
+
+/* Stores */
+.head_stores {
+    border: solid;
+    text-align: center;
+}
+
+.stores {
+    font-size: larger;
+    border: dotted;
+    width: 400px;
+    margin: auto;
+}
+
+    .stores span {
+        color: green;
+        font-size: xx-large;
+    }
+
+.intro_store {
+    font-size: large;
+}
+
+    .intro_store span {
+        color: lightpink;
+        font-weight: 600;
+        font-size: x-large;
+    }
+
+.list_store table {
+    margin: auto;
+    padding: 16px;
+}
+
+.store {
+    padding: 16px;
+    text-decoration: underline;
+    margin-right: 100px;
+}
+
+.address {
+    padding-left: 10px;
+    font-size: medium;
+}
+
+.map {
+    margin-top: 30px;
+}
+
+    .map img {
+        width: 800px;
+        height: auto;
+        border: groove;
+        margin-left: 350px;
+    }
