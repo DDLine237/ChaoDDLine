@@ -2,58 +2,63 @@
 <html>
     <head>
         <title>Register Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        
-        <form id="frm-register" class="register_form">
-            <fieldset>
-                <legend>Register Form</legend> 
-            <div id="error"></div>
-            
-            <table class="register_table">
+        <div class="text_block" style="background-image:url('../Background/register_backgw.jpg')">
+    
+        <form id="frm-register" class="register_form" style="font-family:'Times New Roman', Times, serif; font-size: large;">
+           <fieldset class="register_field">
+               <legend style="color: darkred; font-size: x-large; font-weight: 600;">Register Form</legend>
+               <table>
                 <tr>
-                    <td>Username</td>
-                    <td><input  class="form_text"type="email" name="username" id="email" placeholder="enter your username..."required></td>
+                    <td class="re_form">Username: </td>
+                    <td><input  class="reform_text"type="email" name="username" id="email" placeholder="enter your username..."required></td>
                 </tr>
 
                 <tr>
-                    <td>Password</td>
-                    <td><input  class="form_text"type="password" name="password" id="password" minlength="6" maxlength="20" placeholder="enter your Password..."></td>
+                    <td class="re_form">Password: </td>
+                    <td><input  class="reform_text"type="password" name="password" id="password" minlength="6" maxlength="20" placeholder="enter your Password..."></td>
                 </tr>
 
                 <tr>
-                    <td>Confirm Password</td>
-                    <td><input type="password" name="password" id="confirm-password" minlength="6" maxlength="20" placeholder="re-password"></td>
+                    <td class="re_form">Confirm Password: </td>
+                    <td><input class="reform_text"type="password" name="password" id="confirm-password" minlength="6" maxlength="20" placeholder="re-password"></td>
                 </tr>
 
                 <tr>
-                    <td>Fullname</td>
-                    <td><input class="form_text" type="text" name="fullname" id="fullname" placeholder="enter your fullname..."></td>
+                    <td class="re_form">Fullname: </td>
+                    <td><input class="reform_text"type="text" name="fullname" id="fullname" ></td>
                 </tr>
 
                 <tr>
-                    <td>Phone</td>
-                    <td><input  class="form_text"type="tel" name="phone" id="phone" placeholder="your phone number..."></td>
+                    <td class="re_form">Phone: </td>
+                    <td><input  class="reform_text"type="tel" name="phone" id="phone"></td>
                 </tr>
 
                 <tr>
-                    <td>Birthday</td>
-                    <td><input  class="form_text"type="date" name="birthday" id="birthday"></td>
+                    <td class="re_form">Birthday: </td>
+                    <td><input  class="reform_text"type="date" name="birthday" id="birthday"></td>
                 </tr>
 
                 <tr>
-                    <td>Age</td>
-                    <td><input  class="form_text"type="number" name="age" id="age"></td>
+                    <td class="re_form">Age: </td>
+                    <td><input class="reform_text"type="number" name="age" id="age"></td>
                 </tr>
             </table>
             <div> <p> By creating an account you accept to our <a Terms & Privacy>Terms & Privacy</a></p></div>
-            <div>
-            <input type="submit" id="btn-register" value="Register">
-            <input type="reset" value="Clear">
+            <div class="fieldset_adjust">
+            <input class="register_button" type="submit" id="btn-register" value="Register">
+            <input class="register_button" type="reset" value="Clear">
+            <br><a href="login.html" rel="external" style=" color: purple">Back to login</a>
+
             </div>
-            <a href="login.html" rel="external">Back to login</a>
-            </fieldset>
+           </fieldset>
+            <div id="error"></div>
         </form>
     </div>
 
@@ -70,5 +75,11 @@
                 <i class="fab fa-instagram"></i>
             </div>
         </div>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
     </body>
 </html>

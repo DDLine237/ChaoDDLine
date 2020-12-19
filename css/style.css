@@ -209,26 +209,24 @@ background-color: #125986;
     margin-top: 50px;
     padding: 16px;
     height: 500px;
-
 }
+.login_form legend{
+color: orange;
+font-size: xx-large;}
+
 .login_table{
     margin-top: 20px;
     margin-left: 60px;
 }
 
-   legend {
-        color: darkorange;
-        font-size: xx-large;
-    }
-
-fieldset {
+  
+.login_field {
     margin-top: 70px;
     padding: 10px;
     margin-left: 490px;
     margin-right: 470px;
     background-color: white;
 }
-
 
 
 .form_text {
@@ -246,11 +244,45 @@ fieldset {
 }
 
 /* Register form*/
-.register_form{
-    border: solid orange;
-    text-align: center;
+.text_block{
+    height: 650px;
 }
-.register_table{
-    border: solid pink;
-    margin-top: 20px;
+.register_form{
+    padding: 16px;
+    margin-top: 50px;
+    height: 650px;
+}
+.register_field{
+    margin-top: 70px;
+    padding-left: 20px;
+    margin-left: 480px;
+    margin-right: 430px;
+    background-color: linen;
+    border-radius: 1cm;
+    border: dashed darkslategrey;
+}
+    .register_field legend,a,p{
+        text-align: center;
+    }
+    .fieldset_adjust{
+        text-align: center;
+        margin-left: -40px;
+    }
+
+.register_form table
+{ 
+    margin-left: 10px;
+    height: 300px;
+}
+.reform_text{
+    font-size: medium;
+    margin-left: 30px;
+    width: 180px;
+    
+}
+.register_button{
+    background-color: darkred;
+    color: whitesmoke;
+    font-size: large;
+    width: 100px;
 }
