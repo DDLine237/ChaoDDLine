@@ -98,29 +98,20 @@ background-color: #125986;
 
     /* Home background in Home*/
 
-    /* Intro background in productpage*/
-    .intro_background{
-        margin-top: 0px;
-        float: left;
+    /* Carousel in productpage*/
+    #img_01{
+        width: 0px;
     }
-        .intro_background img{
-            height: 360px;
-            width: 431px;
-           border: solid;
-        }
-    .product_intro{
-        float: left;
-        margin-left: 47px;
-        margin-top: 46px;
+    .carousel-inner{
+        border: black solid;
+        width: 1100px;
+        height: 500px;
     }
-    .background-christ-1{
-        float: left;
+    .carousel {
+        margin-left: 180px;
+        border: pink solid;
+        width: 1000px;
     }
-    .background-christ-2{
-        float: right;
-        margin-left: 55px;
-    }
-
     /* Navbar in Product page*/
 .navbar_product{
     border-bottom-style: groove;
@@ -163,41 +154,44 @@ background-color: #125986;
     margin-left: 550px;
     margin-right: 550px;
     text-align: center;
-     margin-top: 450px;
+     margin-top: 100px;
      font-size: xx-large;
      font-weight: 700;
      padding-top:16px ;
 }
 .new-arrival-product{
     margin-top: 10px;
-    border: solid orange;
+    
     margin-right: 50px;
     box-sizing: border-box;
     margin-left: 50px;
 }
 
 .img-manual{
-    border: solid red;
+   
     display: inline-block;
+    width: 300px;
+    margin-left: 33px;
+    border: steelblue solid;
 }
 .card{
     margin-top:45px;
-    margin-left: 8px;
-    margin-right: 8px;
-    border: solid yellowgreen;
+    margin-left: 30px;
+    margin-right: 30px;
+   
 }
 .card-body{
     height: 50px;
-    border: palevioletred solid;
+   
 }
 .card-title{
     text-align: center;
 }
 .img-fluid{
-    border: solid;
-    width: 70%;
+   
     padding: 10px;
-    margin-left: 55px;
+    margin-left: 25px;
+    height: 350px;
 }
 
 /*Login form*/
