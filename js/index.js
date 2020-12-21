@@ -17,53 +17,59 @@ function Ready() {
         }
     });
 }
-function Login(e) {
-    e.preventDefault();
 
-    $.ajax({
-        type: "POST",
-        url: "../php/login.php",
-        data: $("#frm-login").serialize(),
-        success: function (result) {
-            result = $.parseJSON(result);
-            if (result.success) {
-                alert("Fullname" + result.fullname + "\n" +
-                    "Phone" + result.phone + "\n" +
-                    "Birthday" + result.birthday + "\n" +
-                    "Age" + result.age);
+function LoadProduct(e) {
+    $('#main').load('product.html', function (response, status, xhr) {
+        if (status == 'success') {
+            var category, subcategory = e.target.id.substring(4, e.target.id.length).trim();
+
+            switch (subcategory) {
+                case 'product':
+                    category = ''; subcategory = '';
+                    MenuActive($('nav #nav-product'), 'All Products');
+                    break;
+
+                case 'category': case 'sex': case 'age':
+                    category = subcategory;
+                    subcategory = '';
+                    break;
+
+                default:
+                    category = GetCategory(subcategory);
             }
-            else {
-                alert("Login unsuccessfully!");
+
+            $('#breadcrumb-product-detail').empty();
+            $('#breadcrumb-product-detail').append('<li class="breadcrumb-item"><a href="#" id="nav-product">All Products</a></li>');
+
+            if (category) {
+                var category_title = category.charAt(0).toUpperCase() + category.slice(1);
+                $('#breadcrumb-product-detail').append(`<li class="breadcrumb-item"><a href="#" id="nav-${category}">${category_title}</a></li>`);
+
+                MenuActive($(`nav #nav-${category}`), category_title);
             }
+
+            if (subcategory) {
+                var subcategory_title = subcategory.charAt(0).toUpperCase() + subcategory.slice(1);
+                $('#breadcrumb-product-detail').append(`<li class="breadcrumb-item"><a href="#" id="nav-${subcategory}">${subcategory_title}</a></li>`);
+
+                MenuActive($(`nav #nav-${subcategory}`), subcategory_title);
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: '../php/product.php',
+                data: {
+                    category: category,
+                    subcategory: subcategory
+                },
+                success: function (result) {
+                    result = $.parseJSON(result);
+
+                    ShowProduct(result);
+                }
+            });
         }
     });
-}
-
-
-function Register(e) {
-    e.preventDefault();
-
-    if ($("#password").val() === $("#confirm-password").val()) {
-        $.ajax({
-            type: "POST",
-            url: "../php/register.php",
-            data: $("#frm-register").serialize(),
-            success: function (result) {
-                result = $.parseJSON(result);
-
-                if (result.success) {
-                    alert("Registered successfully!");
-                    location.href = "login.html";
-                }
-                else {
-                    alert("Registered unsuccessfully!");
-                }
-            }
-        });
-    }
-    else {
-        $("#error").text("* Password mismatched.\n");
-    }
 }
 
 $("#showAllProduct").ready(showProduct);
@@ -151,3 +157,54 @@ function ViewDetails() {
          });
          location.href="product_detail.html";
 }
+
+
+function Login(e) {
+    e.preventDefault();
+
+    $.ajax({
+        type: "POST",
+        url: "../php/login.php",
+        data: $("#frm-login").serialize(),
+        success: function (result) {
+            result = $.parseJSON(result);
+            if (result.success) {
+                alert("Fullname" + result.fullname + "\n" +
+                    "Phone" + result.phone + "\n" +
+                    "Birthday" + result.birthday + "\n" +
+                    "Age" + result.age);
+            }
+            else {
+                alert("Login unsuccessfully!");
+            }
+        }
+    });
+}
+
+
+function Register(e) {
+    e.preventDefault();
+
+    if ($("#password").val() === $("#confirm-password").val()) {
+        $.ajax({
+            type: "POST",
+            url: "../php/register.php",
+            data: $("#frm-register").serialize(),
+            success: function (result) {
+                result = $.parseJSON(result);
+
+                if (result.success) {
+                    alert("Registered successfully!");
+                    location.href = "login.html";
+                }
+                else {
+                    alert("Registered unsuccessfully!");
+                }
+            }
+        });
+    }
+    else {
+        $("#error").text("* Password mismatched.\n");
+    }
+}
+
