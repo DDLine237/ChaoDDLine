@@ -127,34 +127,47 @@ function showProduct_php() {
 
 $(document).on("click", "#view-details", ViewDetails);
 function ViewDetails() {
-    var id = $(this).data("product-id");
+    var id = parseInt($(this).data("product-id"));
+    var products =
+        [
+            { id: 1, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
+            { id: 2, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
+            { id: 3, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
+            { id: 5, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
+            { id: 4, name: "helo", price: "$20", img: "../Pic/heo.jpg" }
+        ];
+
+        alert(products.keys(id));
+    
+    $("#showAllProduct").empty();
+    $("#product-details").empty();
+    
+    $("#product-details").load('product_detail.html', function(response, status, xhr) {
+        if(status === 'success') {
+            $('#product-details #img_01').attr('src', result[0].img);
+            $('#product-details #product_name').append.text(result[0].name);
+            $("#product_price").append.text((result[0].price));
+        }
+    });
     //location.href ='product_detail.html';
 
-     $.ajax ({
+    /* 
+    $.ajax ({
              type: "POST",
              url: "../php/product_detail.php",
              data: {id: id},
              success: function( result ) {
                  result = $.parseJSON(result);
                  
-                 $("#showAllProduct").empty();
-                 $("#product-details").empty();
-
-                 $("#product-details").load('product_detail.html', function(response, status, xhr) {
-                     if(status === 'success') {
-                        $('#product-details #img_01').attr('src', result[0].img); 
-                        $('#product-details #product_name').append.text((result[0].name));   
-                        $("#product_price").append.text((result[0].price));
-                        
-                             
-            }});            /*var text=
+                            /*var text=
                         `<img src="../Pic/heo.jpg" alt="${result[0].name}">
                         <h5>dddd </h5>
                         <p>$111</p>
                         <a href="#" class="btn btn-success">Add to cart</a>`;  */                
                 /* $("#product-details").append(text);*/
-             }
-         });
+          //   }
+         //});
+         
 }
 
 
