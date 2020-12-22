@@ -74,7 +74,7 @@ function LoadProduct(e) {
 
 $("#showAllProduct").ready(showProduct);
 
-function showProduct(products) {
+function showProduct(product) {
     $("#showAllProduct").empty();
    /* var products =
         [
@@ -86,7 +86,7 @@ function showProduct(products) {
         ];
         */
 
-    for (item of products) {
+    for (item of product) {
         var text = `<div class="col-4 sm">
         
                         <div class="card" id="heo">
@@ -127,7 +127,7 @@ function showProduct_php() {
 
 $(document).on("click", "#view-details", ViewDetails);
 function ViewDetails() {
-    var id = parseInt($(this).data("product-id"));
+    var id = $(this).data("product-id");
     
    /* var result =
         [
@@ -155,11 +155,10 @@ function ViewDetails() {
     $("#showAllProduct").empty();
     $("#product-details").empty();
     
-    $("#product-details").load('product_detail.html', function(response, status, xhr) {
+    $("#product-details").load('product_detail.html',result[0], function(response, status, xhr) {
         if(status === 'success') {
-            $('#product-details #img_01').attr('src', result[i].img);
-            $('#product-details #product_name').text(result[i].name);
-            $("#product_price").text((result[i].price));
+            $('#product-details #product_name').text(result[0].name);
+            $('#product-details #product_price').text((result[0].price));
         }
     });              
                             /*var text=
