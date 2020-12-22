@@ -154,8 +154,13 @@ function ViewDetails() {
         result = $.parseJSON(result);
 
     $("#showAllProduct").empty();
+    $(document).ready(function(){
+        $("button").click(function(){
+          $(".new-arrival").empty();
+        });
+      });
     $("#product-details").empty();
-    $(".new-arrival").empty();
+    
 
     $("#product-details").load('product_detail.html',result[0], function(response, status, xhr) {
         if(status === 'success') {
