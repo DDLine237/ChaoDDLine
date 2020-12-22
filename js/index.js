@@ -128,6 +128,7 @@ function showProduct_php() {
 $(document).on("click", "#view-details", ViewDetails);
 function ViewDetails() {
     var id = parseInt($(this).data("product-id"));
+    alert(id);
     var products =
         [
             { id: 1, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
@@ -144,6 +145,7 @@ function ViewDetails() {
                 result = products[i];
             }
         }
+        alert(result);
     
     $("#showAllProduct").empty();
     $("#product-details").empty();
