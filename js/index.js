@@ -137,7 +137,13 @@ function ViewDetails() {
             { id: 4, name: "helo", price: "$20", img: "../Pic/heo.jpg" }
         ];
 
-        alert(products.keys(id));
+        var result;
+
+        for(var i = 0; i < products.length; i++) {
+            if(products[i].id == id) {
+                result = products[i];
+            }
+        }
     
     $("#showAllProduct").empty();
     $("#product-details").empty();
