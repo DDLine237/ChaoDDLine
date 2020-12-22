@@ -128,6 +128,7 @@ function showProduct_php() {
 $(document).on("click", "#view-details", ViewDetails);
 function ViewDetails() {
     var id = parseInt($(this).data("product-id"));
+    alert(id);
     
     var result =
         [
@@ -140,6 +141,7 @@ function ViewDetails() {
         
         var i = 0;
         for(i; i < result.length; i++) {
+            alert(result[i].id);
             if(result[i].id == id) {
                 break;
             }
@@ -151,8 +153,8 @@ function ViewDetails() {
     $("#product-details").load('product_detail.html', function(response, status, xhr) {
         if(status === 'success') {
             $('#product-details #img_01').attr('src', result[i].img);
-            $('#product-details #product_name').append.text(result[i].name);
-            $("#product_price").append.text((result[i].price));
+            $('#product-details #product_name').text(result[i].name);
+            $("#product_price").text((result[i].price));
         }
     });
     //location.href ='product_detail.html';
