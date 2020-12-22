@@ -140,7 +140,7 @@ function ViewDetails() {
                  $("#showAllProduct").empty();
                  $("#product-details").empty();
 
-                 $("#product-details").load('product_detail.html', result[0], function(response, status, xhr) {
+                 $("#product-details").load('product_detail.html', function(response, status, xhr) {
                      if(status === 'success') {
                         $('#product-details #img_01').attr('src', result[0].img); 
                         $('#product-details #product_name').append.text((result[0].name));   
@@ -155,7 +155,6 @@ function ViewDetails() {
                 /* $("#product-details").append(text);*/
              }
          });
-         location.href="product_detail.html";
 }
 
 
