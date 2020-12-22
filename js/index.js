@@ -128,8 +128,8 @@ function showProduct_php() {
 $(document).on("click", "#view-details", ViewDetails);
 function ViewDetails() {
     var id = parseInt($(this).data("product-id"));
-    alert(id);
-    var products =
+    
+    var result =
         [
             { id: 1, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
             { id: 2, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
@@ -137,24 +137,22 @@ function ViewDetails() {
             { id: 5, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
             { id: 4, name: "helo", price: "$20", img: "../Pic/heo.jpg" }
         ];
-
-        var result;
-
-        for(var i = 0; i < products.length; i++) {
-            if(products[i].id == id) {
-                result = products[i];
+        
+        var i = 0;
+        for(i; i < products.length; i++) {
+            if(result[i].id == id) {
+                break;
             }
         }
-        alert(result);
     
     $("#showAllProduct").empty();
     $("#product-details").empty();
     
     $("#product-details").load('product_detail.html', function(response, status, xhr) {
         if(status === 'success') {
-            $('#product-details #img_01').attr('src', result[0].img);
-            $('#product-details #product_name').append.text(result[0].name);
-            $("#product_price").append.text((result[0].price));
+            $('#product-details #img_01').attr('src', result[i].img);
+            $('#product-details #product_name').append.text(result[i].name);
+            $("#product_price").append.text((result[i].price));
         }
     });
     //location.href ='product_detail.html';
