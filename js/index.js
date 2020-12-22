@@ -125,7 +125,11 @@ function showProduct_php() {
         }
     });
 }
-
+$(document).ready(function(){
+    $(".img-fluid").click(function(){
+      $(".new-arrival").empty();
+    });
+  });
 $(document).on("click", "#view-details", ViewDetails);
 function ViewDetails() {
     var id = $(this).data("product-id");
@@ -146,12 +150,8 @@ function ViewDetails() {
             }
         }
     */
-   $(document).ready(function(){
-    $(".img-fluid").click(function(){
-      $(".new-arrival").empty();
-    });
-  });
   
+
    $.ajax ({
     type: "POST",
     url: "../php/product_detail.php",
