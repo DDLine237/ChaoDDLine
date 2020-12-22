@@ -158,7 +158,7 @@ function ViewDetails() {
     
     $("#product-details").load('product_detail.html',result[0], function(response, status, xhr) {
         if(status === 'success') {
-            $('#product-details #product_image').attr('src', result[0].img);
+            $('#product-details #product_image').attr('href', result[0].img);
             $('#product-details #product_name').text(result[0].name);
             $('#product-details #product_price').text((result[0].price));
         }
