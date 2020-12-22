@@ -155,7 +155,7 @@ function ViewDetails() {
 
     $("#showAllProduct").empty();
     $(document).ready(function(){
-        $("button").click(function(){
+        $(".img-fluid").click(function(){
           $(".new-arrival").empty();
         });
       });
