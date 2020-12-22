@@ -154,11 +154,9 @@ function ViewDetails() {
         result = $.parseJSON(result);
 
     $("#showAllProduct").empty();
-    $(".new-arrival").empty();
-    $(".navbar_product").empty(); 
-    $("#carouselExampleIndicators").empty();
     $("#product-details").empty();
-   
+    $(".new-arrival").empty();
+
     $("#product-details").load('product_detail.html',result[0], function(response, status, xhr) {
         if(status === 'success') {
             $('#product-details #product_image').attr('src', result[0].img);
