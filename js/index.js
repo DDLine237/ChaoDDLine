@@ -146,6 +146,12 @@ function ViewDetails() {
             }
         }
     */
+   $(document).ready(function(){
+    $(".img-fluid").click(function(){
+      $(".new-arrival").empty();
+    });
+  });
+  
    $.ajax ({
     type: "POST",
     url: "../php/product_detail.php",
@@ -154,11 +160,7 @@ function ViewDetails() {
         result = $.parseJSON(result);
 
     $("#showAllProduct").empty();
-    $(document).ready(function(){
-        $(".img-fluid").click(function(){
-          $(".new-arrival").empty();
-        });
-      });
+    
     $("#product-details").empty();
     
 
