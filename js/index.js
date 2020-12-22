@@ -139,7 +139,7 @@ function ViewDetails() {
         ];
         
         var i = 0;
-        for(i; i < products.length; i++) {
+        for(i; i < result.length; i++) {
             if(result[i].id == id) {
                 break;
             }
