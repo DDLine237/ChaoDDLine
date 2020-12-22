@@ -72,7 +72,8 @@ function LoadProduct(e) {
     });
 }
 
-$("#showAllProduct").ready(showProduct);
+
+$("#showAllProduct").ready(showProduct_php);
 
 function showProduct(product) {
     $("#showAllProduct").empty();
