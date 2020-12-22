@@ -74,9 +74,9 @@ function LoadProduct(e) {
 
 $("#showAllProduct").ready(showProduct);
 
-function showProduct() {
+function showProduct(products) {
     $("#showAllProduct").empty();
-    var products =
+   /* var products =
         [
             { id: 1, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
             { id: 2, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
@@ -84,7 +84,7 @@ function showProduct() {
             { id: 5, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
             { id: 4, name: "helo", price: "$20", img: "../Pic/heo.jpg" }
         ];
-
+        */
 
     for (item of products) {
         var text = `<div class="col-4 sm">
@@ -128,9 +128,8 @@ function showProduct_php() {
 $(document).on("click", "#view-details", ViewDetails);
 function ViewDetails() {
     var id = parseInt($(this).data("product-id"));
-    alert(id);
     
-    var result =
+   /* var result =
         [
             { id: 1, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
             { id: 2, name: "helo", price: "$20", img: "../Pic/heo.jpg" },
@@ -141,12 +140,18 @@ function ViewDetails() {
         
         var i = 0;
         for(i; i < result.length; i++) {
-            alert(result[i].id);
             if(result[i].id == id) {
                 break;
             }
         }
-    
+    */
+   $.ajax ({
+    type: "POST",
+    url: "../php/product_detail.php",
+    data: {id: id},
+    success: function( result ) {
+        result = $.parseJSON(result);
+
     $("#showAllProduct").empty();
     $("#product-details").empty();
     
@@ -156,25 +161,15 @@ function ViewDetails() {
             $('#product-details #product_name').text(result[i].name);
             $("#product_price").text((result[i].price));
         }
-    });
-    //location.href ='product_detail.html';
-
-    /* 
-    $.ajax ({
-             type: "POST",
-             url: "../php/product_detail.php",
-             data: {id: id},
-             success: function( result ) {
-                 result = $.parseJSON(result);
-                 
+    });              
                             /*var text=
                         `<img src="../Pic/heo.jpg" alt="${result[0].name}">
                         <h5>dddd </h5>
                         <p>$111</p>
                         <a href="#" class="btn btn-success">Add to cart</a>`;  */                
-                /* $("#product-details").append(text);*/
-          //   }
-         //});
+               
+             }
+         });
          
 }
 
