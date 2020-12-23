@@ -419,7 +419,10 @@ font-size: xx-large;}
     }
 
     /* Detail */
-    .info_detail_front{
+.detail_contents{
+    float: right;
+}
+    #product_image{
         border: solid;
         float: left;
     }
