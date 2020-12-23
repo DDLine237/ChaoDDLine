@@ -419,6 +419,10 @@ font-size: xx-large;}
     }
 
     /* Detail */
+    .info_detail_front{
+        border: solid;
+        float: left;
+    }
     #product_name {
         font-size: xx-large;
         font-weight: 300;
