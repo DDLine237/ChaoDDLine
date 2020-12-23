@@ -418,6 +418,7 @@ font-size: xx-large;}
 .frame{
     border: solid darkorchid;
     height: 400px;
+    margin-top: -100px;
 }
 .detail_contents{
     float: right;

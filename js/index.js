@@ -155,16 +155,18 @@ function ViewDetails() {
     success: function( result ) {
         result = $.parseJSON(result);
     
-    $(".navbar_product").css("margin-top","");
+    $("#carouselExampleIndicators").css("margin-top","0px");
+    $("#carouselExampleIndicators").css("border","none");
+    $("#carouselExampleIndicators").empty();
+
+    $(".navbar_product").css("margin-top","0px");
     $(".navbar_product").css("border","none");
     $(".navbar_product").empty();
     
-    $(".new-arrival").css("margin-top","");
-    $(".new-arrival").css("border","none");
-    $(".new-arrival").empty();
 
-    $(".new-arrival-product").css("margin]-top","");
-    $(".new-arrival-product").empty();
+    $(".new-arrival").css("border","none");
+    $(".new-arrival").css("margin-top","0px");
+    $(".new-arrival").empty();
 
     $("#showAllProduct").empty();
     $("#product-details").empty();
