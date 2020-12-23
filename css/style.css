@@ -422,15 +422,15 @@ font-size: xx-large;}
 .detail_contents{
     float: right;
     border: solid red;
-    margin-top: 20px;
-    margin-right: 30;
+    margin-top: 40px;
+   
 
 }
     #product_image{
         border: solid;
         float: left;
         margin-top: 7px;
-        margin-left: 80px;
+        margin-left: 95px;
     }
     #product_name {
         font-size: xx-large;
