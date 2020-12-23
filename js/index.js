@@ -155,8 +155,13 @@ function ViewDetails() {
     success: function( result ) {
         result = $.parseJSON(result);
     
+    $(".navbar_product").css("margin-top","px");
+    $(".navbar_product").css("border","none");
+    $(".navbar_product").empty();
+    
+
     $(".new-arrival").css("border","none");
-    $(".new-arrival").css("margin-top","0px");
+    $(".new-arrival").css("margin-top","px");
     $(".new-arrival").empty();
 
     $("#showAllProduct").empty();
