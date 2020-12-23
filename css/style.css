@@ -183,11 +183,13 @@ background-color: #125986;
 .card-title{
     text-align: center;
 }
-.img-fluid{
-   
+.img-fluid
+{
+   border: darkturquoise solid;
     padding: 10px;
     margin-left: 25px;
     height: 350px;
+    cursor: pointer;
 }
 
 /*Login form*/
@@ -422,9 +424,8 @@ font-size: xx-large;}
 }
 .detail_contents{
     float: right;
-    border: solid red;
-    margin-top: 60px;
-    margin-right: 50px;
+    margin-top: 80px;
+    margin-right: 60px;
    
 
 }
@@ -449,6 +450,7 @@ font-size: xx-large;}
     
     #product_price {
         font-size: x-large;
+        margin-top: 10px;
     }
     
     .product_color {
@@ -502,11 +504,11 @@ font-size: xx-large;}
         background-color: black;
         color: white;
         cursor: pointer;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     
         .cart:hover {
-            background-color: #117A65;
+            background-color: darkslategrey;
         }
     
     .aboutproduct {
