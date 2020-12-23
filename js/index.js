@@ -162,6 +162,7 @@ function ViewDetails() {
     $(".navbar_product").css("border","none");
 
     $(".new-arrival").css("border","none");
+    $(".new-arrival").css("margin-top","0px");
     $(".new-arrival").empty();
 
     $("#showAllProduct").empty();

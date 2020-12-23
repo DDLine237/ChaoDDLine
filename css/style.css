@@ -421,7 +421,7 @@ font-size: xx-large;}
     /* Detail */
 .frame{
     border: solid darkorchid;
-    height: 500px;
+    height: 400px;
 }
 .detail_contents{
     float: right;
