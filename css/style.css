@@ -161,7 +161,6 @@ background-color: #125986;
 }
 .new-arrival-product{
     margin-top: 10px;
-    
     margin-right: 50px;
     box-sizing: border-box;
     margin-left: 50px;
@@ -426,7 +425,8 @@ font-size: xx-large;}
 .detail_contents{
     float: right;
     border: solid red;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-right: 50px;
    
 
 }
@@ -512,9 +512,8 @@ font-size: xx-large;}
         }
     
     .aboutproduct {
-        margin: 30px;
-        padding: 10px;
-        border: solid lawngreen;  
+        margin: 20px;
+        padding: 10px; 
         width: 300px;
         height: 50px;
       }

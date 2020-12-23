@@ -155,8 +155,8 @@ function ViewDetails() {
     success: function( result ) {
         result = $.parseJSON(result);
     
-    $("#carouselExampleIndicators").css("border","none");
     $("#carouselExampleIndicators").css("margin-top","0px");
+    $("#carouselExampleIndicators").css("border","none");
     $("#carouselExampleIndicators").empty();
 
     $(".navbar_product").css("margin-top","0px");
