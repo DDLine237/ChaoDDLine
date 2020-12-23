@@ -421,10 +421,16 @@ font-size: xx-large;}
     /* Detail */
 .detail_contents{
     float: right;
+    border: solid red;
+    margin-top: 15px;
+    margin-right: ;
+
 }
     #product_image{
         border: solid;
         float: left;
+        margin-top: 15px;
+        margin-left: 50px;
     }
     #product_name {
         font-size: xx-large;
@@ -478,6 +484,7 @@ font-size: xx-large;}
     .choose_quantity {
         cursor: pointer;
         margin-left: 15px;
+        margin-top: 7px;
     }
     
         .choose_quantity select {
@@ -494,6 +501,7 @@ font-size: xx-large;}
         background-color: black;
         color: white;
         cursor: pointer;
+        margin-top: 10px;
     }
     
         .cart:hover {

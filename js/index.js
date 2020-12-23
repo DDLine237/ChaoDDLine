@@ -154,9 +154,8 @@ function ViewDetails() {
     data: {id: id},
     success: function( result ) {
         result = $.parseJSON(result);
-
+    $(".new-arrival").empty();
     $("#showAllProduct").empty();
-    
     $("#product-details").empty();
     
 
