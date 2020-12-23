@@ -155,14 +155,16 @@ function ViewDetails() {
     success: function( result ) {
         result = $.parseJSON(result);
     
-    $(".navbar_product").css("margin-top","px");
+    $(".navbar_product").css("margin-top","");
     $(".navbar_product").css("border","none");
     $(".navbar_product").empty();
     
-
+    $(".new-arrival").css("margin-top","");
     $(".new-arrival").css("border","none");
-    $(".new-arrival").css("margin-top","px");
     $(".new-arrival").empty();
+
+    $(".new-arrival-product").css("margin]-top","");
+    $(".new-arrival-product").empty();
 
     $("#showAllProduct").empty();
     $("#product-details").empty();
