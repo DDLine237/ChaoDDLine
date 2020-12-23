@@ -418,6 +418,9 @@ font-size: xx-large;}
     }
 
     /* Detail */
+.frame{
+    border: solid darkorchid;
+}
 .detail_contents{
     float: right;
     border: solid red;
