@@ -226,7 +226,7 @@ function Register(e) {
 
                 if (result.success) {
                     alert("Registered successfully!");
-                    location.href = "../html/login.html";
+                    location.href = "login.html";
                 }
                 else {
                     alert("Registered unsuccessfully!");
