@@ -341,16 +341,15 @@ font-size: xx-large;}
 
 .about {
     font-size: xx-large;
-   
     padding: 16px;
     font-weight: 600;
     border-bottom: double;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .about_store {
     border: solid;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 300px;
     margin-right: 300px
 }
