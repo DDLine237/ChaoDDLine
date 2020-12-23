@@ -154,11 +154,15 @@ function ViewDetails() {
     data: {id: id},
     success: function( result ) {
         result = $.parseJSON(result);
+    
+    $("#carouselExampleIndicators").css("border","none");
+    $("#carouselExampleIndicators").empty();
+
     $(".new-arrival").css("margin-top","0px");
     $(".new-arrival").empty();
+
     $("#showAllProduct").empty();
     $("#product-details").empty();
-    
 
     $("#product-details").load('product_detail.html',result[0], function(response, status, xhr) {
         if(status === 'success') {
