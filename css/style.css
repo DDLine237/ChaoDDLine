@@ -430,7 +430,7 @@ font-size: xx-large;}
         border: solid;
         float: left;
         margin-top: 7px;
-        margin-left: 95px;
+        margin-left: 110px;
     }
     #product_name {
         font-size: xx-large;
@@ -511,8 +511,8 @@ font-size: xx-large;}
     .aboutproduct {
         margin: 30px;
         padding: 10px;
-        margin-top: 10px;
-    }
+        border: solid lawngreen;  
+      }
     
     .description {
         font-size: x-large;
