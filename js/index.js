@@ -200,10 +200,10 @@ function Login(e) {
         success: function (result) {
             result = $.parseJSON(result);
             if (result.success) {
-                alert("Fullname" + result.fullname + "\n" +
-                    "Phone" + result.phone + "\n" +
-                    "Birthday" + result.birthday + "\n" +
-                    "Age" + result.age);
+                alert("Fullname: " + result.fullname + "\n" +
+                    "Phone: " + result.phone + "\n" +
+                    "Birthday: " + result.birthday + "\n" +
+                    "Age: " + result.age);
             }
             else {
                 alert("Login unsuccessfully!");
@@ -226,7 +226,7 @@ function Register(e) {
 
                 if (result.success) {
                     alert("Registered successfully!");
-                    location.href = "login.html";
+                    location.href = "../html/login.html";
                 }
                 else {
                     alert("Registered unsuccessfully!");
