@@ -150,6 +150,7 @@ background-color: #125986;
 /*product list*/
 .new-arrival{
     height: 100px;
+    border: solid;
     margin-left: 550px;
     margin-right: 550px;
     text-align: center;
