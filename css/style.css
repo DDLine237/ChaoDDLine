@@ -429,8 +429,8 @@ font-size: xx-large;}
     #product_image{
         border: solid;
         float: left;
-        margin-top: 10px;
-        margin-left: 60px;
+        margin-top: 7px;
+        margin-left: 80px;
     }
     #product_name {
         font-size: xx-large;
@@ -501,7 +501,7 @@ font-size: xx-large;}
         background-color: black;
         color: white;
         cursor: pointer;
-        margin-top: 15px;
+        margin-top: 20px;
     }
     
         .cart:hover {
@@ -511,6 +511,7 @@ font-size: xx-large;}
     .aboutproduct {
         margin: 30px;
         padding: 10px;
+        margin-top: 10px;
     }
     
     .description {
@@ -518,7 +519,7 @@ font-size: xx-large;}
         font-weight: 600;
         border-bottom-style: solid;
         width: 150px;
-        margin-top: 10px;
+       
     }
     #description {border:solid;}
     
