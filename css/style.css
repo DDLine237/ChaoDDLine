@@ -384,8 +384,9 @@ font-size: xx-large;}
 
     .intro_store span {
         color: lightpink;
-        font-weight: 600;
-        font-size: x-large;
+        font-weight: 700;
+        font-size: xx-large;
+
     }
 
 .list_store table {
@@ -445,16 +446,19 @@ font-size: xx-large;}
         font-size: x-large;
         padding: 10px;
         margin-left: 20px;
+        color: whitesmoke;
     }
     
     #product_price {
         font-size: x-large;
         margin-top: 10px;
+        color: whitesmoke;
     }
     
     .product_color {
         font-size: medium;
         padding-top: 10px;
+        color: whitesmoke;
     }
     
     .checkcolor {
@@ -465,6 +469,7 @@ font-size: xx-large;}
     
     .size_product {
         font-size: medium;
+        color: whitesmoke;
     }
     
     .choose_size {
@@ -481,6 +486,7 @@ font-size: xx-large;}
     .product_quantity {
         font-size: medium;
         padding-top: 10px;
+        color: whitesmoke;
     }
     
     .choose_quantity {
