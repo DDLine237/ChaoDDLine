@@ -159,8 +159,10 @@ function ViewDetails() {
     $("#carouselExampleIndicators").empty();
 
     $(".navbar_product").empty();
+    $(".navbar_product").css("border","none");
 
     $(".new-arrival").css("margin-top","0px");
+    $(".new-arrival").css("bprder","none");
     $(".new-arrival").empty();
 
     $("#showAllProduct").empty();
