@@ -156,10 +156,13 @@ function ViewDetails() {
         result = $.parseJSON(result);
     
     $("#carouselExampleIndicators").css("border","none");
+    $("#carouselExampleIndicators").css("margin-top","0px");
     $("#carouselExampleIndicators").empty();
 
-    $(".navbar_product").empty();
+    $(".navbar_product").css("margin-top","0px");
     $(".navbar_product").css("border","none");
+    $(".navbar_product").empty();
+    
 
     $(".new-arrival").css("border","none");
     $(".new-arrival").css("margin-top","0px");
