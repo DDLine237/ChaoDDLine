@@ -155,7 +155,6 @@ function ViewDetails() {
     success: function( result ) {
         result = $.parseJSON(result);
     $(".new-arrival p").empty();
-    $.css("border", "");
     $("#showAllProduct").empty();
     $("#product-details").empty();
     
